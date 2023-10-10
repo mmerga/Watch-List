@@ -82,7 +82,7 @@ function App (){
       setIsWatchList(false);
       setIsFilmInfo(false);
       setLoad(false);
-    }, 1000); 
+    }, 2000); 
   }
 
   const handleWatchList = (event) => {
