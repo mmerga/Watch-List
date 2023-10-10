@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;800&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #b0c4b1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------------------- */
+
+#root{
+    min-height: 100vh;
+    /* max-width: 420px; 
+    min-width: 300px; */
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    margin: 0.5rem auto;
+    letter-spacing: 1px;
+    box-shadow: 0 0 2px 2px green;
+    background-color: #003049;
+}
+
+/* -------------------------------------- */
+
+.film-search-wrapper{
+    min-width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.film-search{
+    width: 95%;
+    margin: 1rem auto 0.5rem;
+    border: 5px double #8ecae6;
+    cursor: pointer;
+}
+
+.film-search-info{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.film-search-info span{
+    width: 100%;
+    display: inline-block;
+}
+
+.film-search-info span:nth-of-type(1){
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.film-search-info span:nth-of-type(2){
+    font-style: italic;
+    text-align: center;
+    padding: 0 0.3em;
+    margin-bottom: 1em;
+}
+
+.film-search-img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.film-search-img img{
+    width: 100%;
+}
+
+.film-search-btn-wrapper{
+    border-bottom: 2px double aliceblue;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+.button-wrapper .btn-add,
+.film-search-btn-wrapper .btn-add{
+    background-color: #3a86ff;
+}
+
+/* -------------------------------------- */
+
+.film-info{
+    width: 90%;
+    line-height: 1.5em;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+.film-info-img{
+    margin: auto;
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.film-info-img img{
+    width: 100%;
+    margin: auto;
+}
+
+.film-info-info {
+    width: 100%;
+    margin: auto;;
+}
+
+
+.film-info-info p{
+    border-bottom: 3px double black;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin: 0 1em;
+}
+
+.film-info-info p:nth-of-type(1){
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    text-align: center;
+    border: none;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+.block{
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.5em;
+}
+
+#imdb{
+    font-weight: bold;
+    margin-right: 1em;
+    margin-left: 0.5em;
+    font-size: 1.1rem;
+}
+
+.film-info-info p:nth-of-type(2),
+.film-info-info p:nth-of-type(3){
+    font-style: italic;
+    font-size: 0.8rem;
+    margin: 0;
+    text-align: center;
+    border:none;
+    padding: 0;
+}
+
+.film-info-info p:nth-of-type(4){
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-top: 3px double black;
+}
+
+.film-info-info p:last-of-type{
+    border: none;
+}
+
+/* -------------------------------------- */
+
+.bold{
+    font-weight: bold;
+}
+
+/* -------------------------------------- */
+
+.loaded{
+    min-height: 100vh;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.btn{
+    border: none;
+    cursor: pointer;
+    padding: 0.8em 1.5em;
+    border-radius: 10px;
+    font-size: large;
+    letter-spacing: 1px;
+}
+
+.btn:hover,
+.btn:focus{
+    font-weight: bold;
+    font-style: italic;
+    transform: scale(0.8);
+}
+
+.first-btn{
+    padding: 1.2em 0.7em;
+    letter-spacing: 2px;
+    background-color: #8ecae6;
+    color: #003049;
+    border-radius: 0;
+}
+
+.first-btn:focus,
+.first-btn:hover{
+    transform: scale(1);
+}
+
+
+/* -------------------------------------- */
+
+.watch-list{
+    /* width: 90%; */
+    min-height: 100vh;
+    background-color: #003049;
+    color: #8ecae6;
+    border-bottom: 20px double azure;
+}
+
+.watch-list h1{
+    text-align: center;
+    color: #219ebc;
+    margin: 0.2em;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.watch-list .btn-remove-all{
+    background-color: #fb8500;
+    display: block;
+    margin-left: auto;
+    margin-right: 1em;
+    color: #023047;
+    
+}
+
+.watch-list .btn-danger{
+    background-color: #ffb703;
+    display: block;
+    color: #023047;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    border: 2px double azure
+    
+}
+
+/* -------------------------------------- */
+.search-list{
+    min-height: 100vh;
+    border-bottom: 20px double azure;
+    background-color: #219ebc;
+    color: #023047;
+}
+
+.search-list input,
+.search-list button{
+    display: block;
+    margin: auto;
+    padding: 1em 1.5em;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: darkturquoise;
+}
+
+.search-list input{
+    margin-top: 1rem;
+    font-weight: bold;
+    width: 80%;
+}
+
+.search-list button{
+    width: 60%;
+    border: 2px solid aliceblue;
+}
+
+/* -------------------------------------- */
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* -------------------------------------- */
+
+footer{
+    text-align: center;
+    #git{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+@media(max-width: 377px){
+    #root{
+        width: 318px;
+    }
+}
+
+@media(min-width: 768px){
+    #root{
+        width: 95vw;
+        max-width: 900px;
+        padding-bottom: 1rem;
+    }
+    /* -------------------------------------- */
+    .first-btn{
+        width: 60%;
+        margin: 0.5em auto ;
+        border-radius: 20px;
+    }
+    .first-btn:hover,
+    .first-btn:focus{
+        transform: scale(1.1);
+    }
+    /* -------------------------------------- */
+    .search-list{
+        display: grid;
+        grid-template-columns: repeat(3, minmax( 200px, 1fr));
+        grid-template-rows: auto ;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        grid-template-areas: 
+        "form form form"
+        "film film2 film3";
+        padding: 1rem;
+    }
+    form{
+        display: flex;
+        grid-area: form;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        box-shadow: 0 0 3px 3px black;
+        margin: 0;
+        #search-input{
+            margin: 0;
+        }
+        .btn{
+            padding: 0.8em;
+            width: 30%;
+            margin: auto;
+        }
+    }
+    .film-search-wrapper{
+        min-height: fit-content;
+    }
+    #film-search-wrapper-element{
+        width: 100%;
+        height: 490px;
+        padding: 5px;
+        border: 5px double black; 
+        margin: 0;
+        position: relative;
+
+        .film-search{
+            background-color: aliceblue;
+        }
+        .film-search-info{
+            height: 100px;
+            padding-bottom: 1rem;
+            margin:  0 auto;
+            span{
+                margin: 0;
+            }
+        }
+        .film-search-btn-wrapper{
+            margin: 1em 0 0;
+            position: absolute;
+            border: none;
+            bottom: 0;
+        }
+        .film-search-img{
+            margin: 0;
+            width: 100%;
+            display: flex;
+            .film-search-img-img{
+                margin: auto;
+                width:150px;
+                padding-bottom: 1em ;
+            }
+        }
+    }
+    /* -------------------------------------- */
+    .watch-list{
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: repeat(3, minmax( 200px, 1fr));
+        /* grid-template-rows: auto 470px; */
+        grid-column-gap: 1em;
+        grid-row-gap: 2em;
+        grid-template-areas: 
+        "text text delete"
+        "film film2 film3";
+        padding: 1rem;
+    }
+    .watch-list h1{
+        grid-area: text;
+        margin-left: auto;
+    }
+    .watch-list .btn-remove-all{
+        grid-area: delete;
+        align-self: center;
+    }
+    .film-search-btn-wrapper .btn-danger{
+        margin: 0 auto 1rem;
+        padding: 0.7em 1em;
+    }
+    .watch-full-info{
+        width: 200%;
+        justify-self: center;
+        grid-row: 2;
+        grid-column: 2 / 3;
+    }
+    /* -------------------------------------- */
+}
