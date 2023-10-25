@@ -1,0 +1,43 @@
+.menuBar-container{
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+form{
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.icon{
+    font-size: 5rem;
+    cursor: pointer;
+    color: #c3c3c3
+}
+
+.icon:focus,
+.icon:hover{
+    color: blue;
+}
+
+input{
+    background-color: #464646;
+    color: #c3c3c3;
+    text-align: center;
+    padding: 0.7em 1.4em;
+    border-radius: 20px;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 425px){
+    .icon{
+        font-size: 1.5rem;
+    }
+    input{
+        padding: 0.3em 0.5em;
+    }
+}

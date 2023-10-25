@@ -1,0 +1,136 @@
+.film-info-container{
+    width: 75%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    color: #c3c3c3;
+}
+
+.film-info-img{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.film-info-img img{
+    width: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block
+}
+
+.film-info-info{
+    width: 100%;
+}
+
+.film-info-info-destac{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.film-info-info-destac p:first-of-type{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.film-info-info-destac p:nth-of-type(3){
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.film-info-info-destac p:nth-of-type(4){
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    
+}
+
+.film-info-info-destac p:nth-of-type(4) span:first-child{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.film-info-info-destac .star{
+    margin-right: 0.3rem;
+}
+
+.film-info-info-other{
+    text-align: justify;
+    margin-top: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+.film-info-info-other p {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.film-info-info-other p:first-of-type{
+    border-top: 1px solid #c3c3c3;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.film-info-tols{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.film-info-tols button{
+    display: block;
+    padding: 0.7em 1.5em;
+    color: #1f1f1f;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add{
+    background-color: #2F81F7;
+}
+
+.remove{
+    background-color: orange;
+}
+
+.remove:hover{
+    background-color: red;
+}
+
+.film-info-tols button:hover,
+.film-info-tols button:focus
+{
+    color: #c3c3c3;
+}
+
+.film-info-link{
+    display: block;
+    color: orange;
+    font-weight: bold;
+}
+
+.film-info-link:hover{
+    color:#2F81F7;
+}
+
+.youtube-logo{
+    color: #FF0000;
+    font-size: 2rem;
+}
+
+@media (max-width: 760px){
+    .film-info-img img{
+        width: 80vw;
+    }
+}

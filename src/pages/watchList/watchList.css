@@ -1,0 +1,28 @@
+
+.link{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.link p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    transition: transform 0.5 ease-in-out;
+}
+
+.link p:hover,
+.link p:focus{
+    color: blue;
+    transform: scale(0.95);
+}
+
+.logo{
+    margin-left: 2rem;
+}
+
+
